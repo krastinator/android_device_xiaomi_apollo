@@ -11,6 +11,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+WITH_GMS := false
+TARGET_INCLUDE_STOCK_ARCORE := false
+TARGET_INCLUDE_STOCK_AICORE := false
+TARGET_SUPPORTS_WALLEFFECT := false
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+ 
+# Pixel Launcher
+TARGET_INCLUDE_NEXUS := false
+ 
+# Maintainer
+MATRIXX_MAINTAINER := Murtaza
+
 # Inherit from apollo device
 $(call inherit-product, device/xiaomi/apollo/device.mk)
 
